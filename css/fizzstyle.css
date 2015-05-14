@@ -1,0 +1,23 @@
+	.wrapper {
+		text-align: center;
+	}
+	.fizz {
+		color: red;
+	}
+	.buzz {
+		color: blue;
+	}
+	.fizzbuzz {
+		color: chartreuse;
+	}
+
+	.fb-field {
+		height: 50px;
+		width: 100px;
+		text-align: center;
+		font-size: 2em;
+	}
+
+	.answer {
+		font-size: 1.5em;
+	}
