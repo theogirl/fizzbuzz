@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	.wrapper {
+		text-align: center;
+	}
+	.fizz {
+		color: red;
+	}
+	.buzz {
+		color: blue;
+	}
+	.fizzbuzz {
+		color: chartreuse;
+	}
+
+	</style>
+</head>
+<body>
+<div class="wrapper">
+<h1>Fizz Buzz Challenge</h1>
+
+<script type="text/javascript">
+
+var fizzValues = new Array();
+var buzzValues = new Array();
+var fbValues = new Array();
+var i = 1; 
+while (i < 101) {
+
+	if ((i%3 === 0) && (i%5 === 0)) {
+		fbValues.push(i);
+		document.write("<p class=\"fizzbuzz\">" + "FIZZ BUZZ!" + "</p>");
+	}
+	else if (i%3 === 0) {
+		fizzValues.push(i);
+		document.write("<p class=\"fizz\">" + "fizz" + "</p>");
+	}
+	else if (i%5 === 0) {
+		buzzValues.push(i);
+		document.write("<p class=\"buzz\">" + "buzz" + "</p>");
+	}
+	else
+		document.write("<p>" + i + "</p>");
+	i++;
+  }
+
+</script>
+
+<h2>Fizz Buzz Pub Cheat Sheet</h2>
+<p>Here is a quick reference as to which numbers you should replace with the word <span style="color:red">"fizz"</span> when you play the game drunk, in a pub ;)</p>
+
+	<p class="fizz">
+	<script type="text/javascript">
+		document.write(fizzValues)
+	</script></p>
+
+
+	<p>Same thing for which numbers you should say <span style="color:blue">"buzz"</span> for instead:</p>
+	<p class="buzz">
+	<script type="text/javascript">
+		document.write(buzzValues);
+	</script></p>
+
+	<p>And finally, when these numbers come up, make sure to yell <span style="color:chartreuse">"FIZZ BUZZ!"</span>:</p>
+	<p class="fizzbuzz">
+	<script type="text/javascript">
+		document.write(fbValues);
+	</script></p>
+
+</div>
+</body>
+</html>
